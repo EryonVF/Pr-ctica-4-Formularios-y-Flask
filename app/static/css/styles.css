@@ -1,0 +1,175 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    max-width: 1000px; /* Establece el ancho máximo que desees */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+header {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    max-width: 1000px; /* Establece el ancho máximo que desees */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    font-size: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    margin-left: 100px; /*mueve el header a la*/
+    padding: 50px;
+    align-items: center;
+    height: 60px;
+    font-weight: bold;
+    margin-bottom: -50px; /* Ajusta la distancia inferior según tu preferencia */
+    }
+
+header img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+    font-size: 22px; 
+}
+
+
+.izmi   {
+    flex: 1; 
+}
+
+.suscribete{
+    text-align:center;
+}
+
+.secciones-container{
+    display:flex ;
+    text-align:center
+}
+
+
+.seccion {
+    flex: 1;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 10px 15px 25px gray;
+}
+
+.seccion h2 {
+    margin-top: 0;
+}
+
+footer {
+    color: #0077ff;
+    text-align: center;
+    
+}
+
+.subscribete input[type="email"]{
+    width: 95.6%;
+    margin-bottom: 10px; /* espacio la entrada y el botón */
+    box-shadow: 5px 5px 15px rgb(255, 0, 0);
+}
+
+.subscribete button {
+    width: 100%; /* Establece el ancho del boton */
+    box-shadow: 5px 5px 15px rgb(27, 221, 173);
+    font-weight: bold;
+}
+
+
+
+/* tablet */
+@media screen and (max-width: 800px) {
+    .container {
+        display: list-item;
+    }
+
+    .content {
+        font-size: 20px;
+    }
+
+    .izmi {
+        background-color: #ffffff;
+        padding: 20px;
+        display: flex;
+        font-size: 18px;
+    }
+
+    .subscribete {
+        padding: 20px;
+        margin-left: 80px; /* Mueve "Suscríbete" hacia la derecha en tablet */
+        width: 1000px;
+    }
+
+  
+}
+
+/* móviles */
+@media screen and (max-width: 480px) {
+
+    header {
+        margin-bottom: -100px; 
+        flex-direction: column; 
+        align-items: center; 
+        margin-left: 0; 
+    }
+
+    header img {
+        order: 1; 
+
+    }
+
+    h1 {
+        order: 2; 
+    }
+
+    .content{
+        font-size: 16px;
+        margin-top: 110px;
+    }
+
+    .izmi {
+     align-items: center;
+        display: inline;
+        font-size: 16px;
+
+    }
+
+    .subscribete input[type="email"]{
+        width: 98%;
+        margin-bottom: 20px; 
+    }
+
+    .subscribete {
+        padding: 20px;
+        margin-left: 0; /* Lo mueve a la derecha */
+        margin-right: 0;
+        width: auto;
+    }
+
+    .secciones-container {
+        display: inline;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .seccion{
+        font-size: 16px;
+    }
+}
